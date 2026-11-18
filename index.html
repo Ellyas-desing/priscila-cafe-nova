@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Priscila Café — café da manhã amazônico, feito na hora com ingredientes locais, em Manaus/AM.">
+    <meta name="theme-color" content="#100904">
+    <title>Priscila Café | Café amazônico em Manaus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="progress" data-progress aria-hidden="true"></div>
+    <p class="side-label" aria-hidden="true">Priscila Café · Manaus/AM</p>
+
+    <header class="header" data-header>
+      <a class="brand" href="#inicio" aria-label="Priscila Café, início">Priscila Café</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span><span class="visually-hidden">Abrir menu</span>
+      </button>
+      <nav id="main-menu" class="main-nav" aria-label="Navegação principal">
+        <a href="#processo">Processo</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#essencia">Essência</a>
+        <a href="#visite">Visite</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <!-- HERO -->
+      <section id="inicio" class="hero" data-hero aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="tag">Café da manhã amazônico · Manaus/AM</p>
+          <h1 id="hero-title">O Amazonas acorda à mesa.</h1>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <video class="hero__video" data-video muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/7118100/pexels-photo-7118100.jpeg?auto=compress&cs=tinysrgb&w=1260">
+            <source src="https://videos.pexels.com/video-files/7118100/7118100-hd_1080_1920_25fps.mp4" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/7118100/7118100-uhd_1440_2560_25fps.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="info">
+          <p>Café coado na hora, receitas afetivas e ingredientes que nascem perto daqui.</p>
+          <div class="actions">
+            <a class="pill" href="#cardapio" data-magnetic>Ver cardápio ↓</a>
+            <a class="pill pill--ghost" href="[LINK_WHATSAPP]" target="_blank" rel="noopener">WhatsApp ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Tucumã</span><i>+</i><span>Cupuaçu</span><i>+</i><span>Macaxeira</span><i>+</i><span>Pupunha</span><i>+</i><span>Taperebá</span><i>+</i><span>Açaí</span><i>+</i>
+          <span>Tucumã</span><i>+</i><span>Cupuaçu</span><i>+</i><span>Macaxeira</span><i>+</i><span>Pupunha</span><i>+</i><span>Taperebá</span><i>+</i><span>Açaí</span><i>+</i>
+        </div>
+      </div>
+
+      <!-- PROCESSO (sticky scroll) -->
+      <section id="processo" class="story" data-story aria-labelledby="story-title">
+        <div class="story__pin">
+          <h2 id="story-title" class="visually-hidden">Como preparamos o seu café</h2>
+          <div class="story__visual">
+            <svg viewBox="0 0 300 320" role="img" aria-label="Xícara que se enche conforme você rola a página">
+              <defs><clipPath id="mug"><path d="M40 70h200c0 90-24 190-100 190S40 160 40 70Z"/></clipPath></defs>
+              <path d="M240 100c46-6 56 32 30 56-12 11-28 15-44 15" fill="none" stroke="#ffedd7" stroke-width="16" stroke-linecap="round"/>
+              <path d="M40 70h200c0 90-24 190-100 190S40 160 40 70Z" fill="#ffedd7"/>
+              <g clip-path="url(#mug)"><rect class="liquid" data-liquid x="30" y="70" width="220" height="200" fill="#382416"/></g>
+              <ellipse cx="140" cy="70" rx="100" ry="14" fill="#e6d2b8"/>
+              <ellipse cx="140" cy="72" rx="90" ry="10" fill="#382416"/>
+            </svg>
+            <p class="story__count" aria-hidden="true"><b data-step-num>01</b> / 03</p>
+          </div>
+          <ol class="story__steps">
+            <li class="is-active" data-step><span class="meta">01 — Café</span><h3>Coado na hora, sempre.</h3><p>Sem garrafa térmica esquecida no balcão. Cada xícara é passada quando você pede, quentinha e no ponto.</p></li>
+            <li data-step><span class="meta">02 — Terra</span><h3>Ingredientes que nascem aqui.</h3><p>Tucumã, cupuaçu, macaxeira e pupunha de pequenos produtores do Amazonas.</p></li>
+            <li data-step><span class="meta">03 — Afeto</span><h3>Receitas de casa, com tempo.</h3><p>Bolo de macaxeira e pupunha cozida todos os dias, do jeito que a gente aprendeu.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CARDÁPIO -->
+      <section id="cardapio" class="section menu" aria-labelledby="menu-title">
+        <div class="section-heading reveal">
+          <p class="tag">Da nossa cozinha</p>
+          <h2 id="menu-title">Sabores que contam de onde a gente vem.</h2>
+          <p>Um encontro entre o café de todos os dias e as frutas, farinhas e afetos da nossa região.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="card reveal" data-tilt>
+            <div class="card__art"><img src="https://images.pexels.com/photos/33938856/pexels-photo-33938856.png?auto=compress&cs=tinysrgb&w=900" alt="Pão francês torrado com café, em Manaus" loading="lazy" decoding="async"></div>
+            <p class="meta">Mais pedido</p>
+            <div class="card__row"><h3>X-Caboquinho tradicional</h3><strong>[R$ 00,00]</strong></div>
+            <p>Pão francês crocante, tucumã fresco, queijo coalho na chapa e banana pacovã frita.</p>
+          </article>
+          <article class="card reveal" data-tilt>
+            <div class="card__art"><img src="https://images.pexels.com/photos/11094180/pexels-photo-11094180.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Tapioca recheada sobre tábua de madeira" loading="lazy" decoding="async"></div>
+            <p class="meta">Feita na hora</p>
+            <div class="card__row"><h3>Tapioca regional</h3><strong>[R$ 00,00]</strong></div>
+            <p>Goma fresca hidratada e recheios que celebram os ingredientes do nosso quintal.</p>
+          </article>
+          <article class="card reveal" data-tilt>
+            <div class="card__art"><img src="https://images.pexels.com/photos/4055112/pexels-photo-4055112.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Bolo de macaxeira fatiado em prato branco" loading="lazy" decoding="async"></div>
+            <p class="meta">Receita afetiva</p>
+            <div class="card__row"><h3>Pupunha &amp; bolo de macaxeira</h3><strong>[R$ 00,00]</strong></div>
+            <p>Pupunha cozida e bolo de macaxeira: dois clássicos preparados diariamente.</p>
+          </article>
+          <article class="card reveal" data-tilt>
+            <div class="card__art"><img src="https://images.pexels.com/photos/5860731/pexels-photo-5860731.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Café quente em caneca ao lado de uma tapioca" loading="lazy" decoding="async"></div>
+            <p class="meta">Para acompanhar</p>
+            <div class="card__row"><h3>Cafés &amp; sucos regionais</h3><strong>[R$ 00,00]</strong></div>
+            <p>Café coado na hora e sucos de cupuaçu, taperebá e açaí.</p>
+          </article>
+        </div>
+        <p class="credit">* Ilustrações demonstrativas — troque por fotos próprias dos pratos.</p>
+        <div class="section-action reveal"><a class="pill pill--ghost" href="[LINK_CARDAPIO_COMPLETO]" target="_blank" rel="noopener" data-magnetic>Abrir cardápio completo ↗</a></div>
+      </section>
+
+      <!-- ESSÊNCIA -->
+      <section id="essencia" class="essence" aria-labelledby="essence-title">
+        <figure class="essence__photo reveal"><img src="https://images.pexels.com/photos/30538479/pexels-photo-30538479.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Mesa de café da manhã com frutas, pães e laticínios" loading="lazy" decoding="async" data-parallax-img></figure>
+        <p class="tag">Nossa essência</p>
+        <h2 id="essence-title" class="essence__text" data-words>Acolher é o nosso ingrediente principal. Cada pedido é feito com tempo, cuidado e respeito por quem cultiva o Amazonas.</h2>
+        <p class="meta">Pequenos produtores · preparo artesanal · Manaus/AM</p>
+        <a class="credit-link" href="[LINK_INSTAGRAM]" target="_blank" rel="noopener">Acompanhe o dia a dia ↗</a>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section class="section testimonials" aria-labelledby="testimonials-title">
+        <div class="section-heading reveal"><p class="tag">Palavras à mesa</p><h2 id="testimonials-title">Um carinho em cada visita.</h2><p class="credit">* Depoimentos demonstrativos — substitua por avaliações reais e autorizadas.</p></div>
+        <div class="quote-grid">
+          <figure class="reveal"><blockquote>“O tucumã estava perfeito e o café chegou quentinho. Daqueles cafés da manhã que pedem repeteco.”</blockquote><figcaption>— Ana, visitante <small>Texto demonstrativo</small></figcaption></figure>
+          <figure class="reveal"><blockquote>“Um lugar tranquilo para encontrar amigos e provar sabores que lembram a casa da gente.”</blockquote><figcaption>— Rafael, visitante <small>Texto demonstrativo</small></figcaption></figure>
+          <figure class="reveal"><blockquote>“Atendimento acolhedor, bolo de macaxeira fresquinho e um suco de cupuaçu inesquecível.”</blockquote><figcaption>— Luiza, visitante <small>Texto demonstrativo</small></figcaption></figure>
+        </div>
+      </section>
+
+      <!-- VISITE -->
+      <section id="visite" class="visit" aria-labelledby="visit-title">
+        <div class="visit__content reveal">
+          <p class="tag">Venha sem pressa</p>
+          <h2 id="visit-title">Sua pausa amazônica começa aqui.</h2>
+          <div class="visit__details">
+            <div><p class="meta">Endereço</p><address>[ENDEREÇO COMPLETO]<br>[BAIRRO] — Manaus/AM<br>[CEP]</address></div>
+            <div><p class="meta">Horários</p><p>Terça a domingo<br>06h30 às 19h00</p><small>[EDITE OS HORÁRIOS]</small></div>
+          </div>
+          <div class="actions">
+            <a class="pill" href="[LINK_MAPS]" target="_blank" rel="noopener" data-magnetic>Como chegar ↗</a>
+            <a class="pill pill--ghost" href="[LINK_WHATSAPP]" target="_blank" rel="noopener">WhatsApp ↗</a>
+          </div>
+        </div>
+        <div class="map reveal" role="img" aria-label="Espaço reservado para incorporar um mapa da localização"><div><span aria-hidden="true">⌖</span><p>Mapa</p><small>[COLE AQUI O IFRAME DO GOOGLE MAPS]</small></div></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__word" aria-hidden="true">Priscila Café</p>
+      <p class="credit footer__credit">* Fotos e vídeo ilustrativos de bancos livres (Pexels): vídeo de Michael Burrows; fotos de Ivo Brasil, Hiure Gomes Fernandes, Streetwindy, Gustavo Santana e Leticia Alvares. Substitua por imagens reais da casa.</p>
+      <div class="footer__row">
+        <p>© <span data-year></span> Priscila Café. Todos os direitos reservados.</p>
+        <nav aria-label="Redes sociais"><a href="[LINK_INSTAGRAM]" target="_blank" rel="noopener">Instagram ↗</a><a href="[LINK_WHATSAPP]" target="_blank" rel="noopener">WhatsApp ↗</a></nav>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
